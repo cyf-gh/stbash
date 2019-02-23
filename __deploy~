@@ -1,0 +1,5 @@
+cp ~/.bash_profile .
+git add -A
+git status
+git commit
+git push
