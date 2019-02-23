@@ -1,4 +1,4 @@
-echo "------------------Run In C:"
+echo "------------------"
 git config --global user.name "cyf-gh"
 git config --global user.email "cyf-ms@hotmail.com"
 
