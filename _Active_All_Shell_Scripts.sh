@@ -1,1 +1,1 @@
-chmod 777 *.sh
+chmod -R 777 *.sh
