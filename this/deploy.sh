@@ -1,5 +1,6 @@
-cp ~/.bash_profile .
+#!/bin/sh
 git add -A
 git status
 git commit
 git push
+

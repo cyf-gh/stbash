@@ -1,0 +1,3 @@
+#!/bin/sh
+$ST_INCLUDE_ALIASE
+go $ST_YOURGITHUB
