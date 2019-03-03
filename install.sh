@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 read -p "Do you want to backup old bash profiles (y/n)? " answer
 case ${answer:0:1} in
     y|Y )

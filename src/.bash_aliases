@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash
 
 # ls
 alias ll='ls -alF'
