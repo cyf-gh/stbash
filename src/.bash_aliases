@@ -7,8 +7,8 @@ alias l='ls -CF'
 
 # rm
 alias sys_rm='/bin/rm -i'
-alias rm_clean=$ST_BASH'utils/emptyRecycle.sh'
-alias rm=$ST_BASH'rm.sh'
+alias rm_clean='bash '$ST_BASH'utils/emptyRecycle.sh'
+alias rm='bash '$ST_BASH'rm.sh'
 
 # edit & restart bash_profile
 alias es='vim ~/.bash_profile'
@@ -27,16 +27,16 @@ alias spv='st_peek_vars'
 alias st_peek_dirs='export | grep ST_DIR'
 alias spd='st_peek_dirs'
 
-alias st_modify_name=$ST_BASH'utils/modifyName.sh'
+alias st_modify_name='bash '$ST_BASH'utils/modifyName.sh'
 alias smn='st_modify_name'
 
-alias st_modify_github=$ST_BASH'utils/modifyGithub.sh'
+alias st_modify_github='bash '$ST_BASH'utils/modifyGithub.sh'
 alias smg='st_modify_github'
 
 # type
 alias ta='type -a'
 
 alias go='st_open'
-alias gh=$ST_BASH'utils/openGithub.sh'
+alias gh='bash '$ST_BASH'utils/openGithub.sh'
 
-alias st_version=$ST_BASH'version.sh'
+alias st_version='bash '$ST_BASH'version.sh'
