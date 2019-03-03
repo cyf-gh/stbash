@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 st_print_info() {
     echo -e "INFO\t $1 "

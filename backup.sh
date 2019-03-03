@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo -e "INFO\tBackup old profile."
 st_bak='~/.stbak'
 mkdir $st_bak

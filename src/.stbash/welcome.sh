@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash
 
 # Welcome Message
 echo -e '\033[40;37m'

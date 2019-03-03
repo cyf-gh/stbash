@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/bash
 
 #macos
 alias vim='mvim'

@@ -14,8 +14,6 @@ fi
 uname | grep Linux > $ST_BLACKHOLE # Linux
 if [ $? = 0 ];then
     ST_SYS_GEN="linux"
-    ST_BASH='~/.stbash/'
-    ST_DIR_DUSTBIN='~/.deleted/'
 fi
 
 uname | grep MINGW > $ST_BLACKHOLE # msys
