@@ -39,7 +39,7 @@ alias st_peek_vars='export | grep ST_'
 alias spv='st_peek_vars'
 alias st_peek_dirs='export | grep ST_DIR'
 alias spd='st_peek_dirs'
-alias st_peek_sys_instruction='alias | grep sys_'
+alias st_peek_sys_instruction='alias | grep "alias sys_"'
 alias spsys='st_peek_sys_instruction'
 
 ## fast

@@ -33,7 +33,7 @@ source $ST_DIR_SRC"funcs.sh"
 # export all aliases to source shell
 source $ST_DIR_SRC"aliases.sh"
 
-export ST_INCLUDE_ALIASE=". "$ST_DIR_SRC"aliases.sh"
+export ST_INCLUDE_ALIASE="bash "$ST_DIR_SRC"aliases.sh"
 
 # welcome
 bash ~/.stbash/welcome.sh
