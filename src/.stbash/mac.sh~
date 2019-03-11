@@ -3,5 +3,5 @@
 #macos
 alias vim='mvim'
 alias vi='mvim'
-alias st_open='open'
+alias go='open'
 
