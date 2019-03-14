@@ -35,8 +35,6 @@ alias sys_vim='/usr/bin/vim'
 alias sys_vi='/usr/bin/vi'
 
 # st
-alias st_peek_all_cli='cat .bash_aliases'
-alias st_help='st_peek_all_cli'
 alias st_peek_vars='export | grep ST_'
 alias spv='st_peek_vars'
 alias st_peek_dirs='export | grep ST_DIR'
