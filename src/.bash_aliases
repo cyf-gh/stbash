@@ -47,7 +47,7 @@ alias spsys='st_peek_sys_instruction'
 ## fast
 alias do='bash' # default bash
 alias go='st_open'
-
+alias vb='od'
 alias gh='go '$ST_YOURGITHUB
 
 alias st_version=$ST_RUN_SH'version.sh'
