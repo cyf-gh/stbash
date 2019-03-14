@@ -35,6 +35,19 @@ alias sys_vim='/usr/bin/vim'
 alias sys_vi='/usr/bin/vi'
 
 # st
+alias st_peek_all_cli='cat ~/.bash_aliases'
+function stHelp() {
+    if [ ! -n "$1" ]; then
+        echo "\t[-c]\tShow all command-line interfaces"    
+    fi
+    if [ $1 == "-c" ]; then
+        st_peek_all_cli
+    else
+        echo "help"
+        # TODO: show argument list    
+    fi
+}
+alias st_help='stHelp'
 alias st_peek_vars='export | grep ST_'
 alias spv='st_peek_vars'
 alias st_peek_dirs='export | grep ST_DIR'
@@ -45,7 +58,14 @@ alias spsys='st_peek_sys_instruction'
 ## fast
 alias do='bash' # default bash
 alias go='st_open'
-
+alias vb='od'
 alias gh='go '$ST_YOURGITHUB
+alias gg='go https://www.google.com'
+function goWeb() {
+    go "https://www.$1"
+}
+alias goo='goWeb'
+
+
 
 alias st_version=$ST_RUN_SH'version.sh'
