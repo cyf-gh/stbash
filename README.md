@@ -20,13 +20,15 @@ ppBash是一款自给自足的bash增强软件，通过对脚本的扩展，实�
 
 ## 安装与使用
 
+**请注意！！！！！安装时一定要cd到ppbash目录下！！！！！**
+
 ```bash
 $git clone https://github.com/cyf-gh/ppbash.git
 $cd ppbash
 $bash install.sh
 ```
 
-并按照提示进行操作即可完成安装。
+按照提示进行操作即可完成安装。
 
 ## CLI
 
@@ -48,6 +50,10 @@ $spsys # st_peek_sys_instruction 查看所有的系统替换命令
 $smn [name] # st_modify_name 修改你的名字
 $smg [github_site] # st_modify_github 修改你的github网址
 ## 例：https://www.github.com/cyf-gh
+
+$st_help [arg]
+	-c # 显示全部CLI
+	-v # 查看ppBash版本号
 ```
 
 

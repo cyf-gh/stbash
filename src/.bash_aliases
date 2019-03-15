@@ -20,6 +20,7 @@ alias grep='grep --color=auto'
 # git
 alias gs='git status'
 alias gc='git commit -m'
+alias gri=$ST_RUN_SH'utils/updateGitIgnore.sh'
 
 alias st_modify_name=$ST_RUN_SH'utils/modifyName.sh'
 alias smn='st_modify_name'
@@ -34,18 +35,31 @@ alias ta='type -a'
 alias sys_vim='/usr/bin/vim'
 alias sys_vi='/usr/bin/vi'
 
+## fast
+alias do='bash' # default bash
+alias go='st_open'
+alias vb='od'
+alias gh='go '$ST_YOURGITHUB
+
+function goWeb() {
+    go "https://www.$1"
+}
+alias goo='goWeb'
+alias gg='goo google.com'
+alias bili='goo bilibili.com'
+
 # st
 alias st_peek_all_cli='cat ~/.bash_aliases'
 function stHelp() {
     if [ ! -n "$1" ]; then
-        echo -e "\t[-c]\tShow all command-line interfaces"    
+        echo -e "\t[-c]\tShow all command-line interfaces."    
+        echo -e "\t[-v]\tShow current ppbash version."
         return 
     fi
     if [ $1 == "-c" ]; then
         st_peek_all_cli
-    else
-        echo "help"
-        # TODO: show argument list    
+    elif [ $1 == "-v" ]; then
+        echo $ST_VERSION
     fi
 }
 alias st_help='stHelp'
@@ -56,17 +70,3 @@ alias spd='st_peek_dirs'
 alias st_peek_sys_instruction='alias | grep "alias sys_"'
 alias spsys='st_peek_sys_instruction'
 
-## fast
-alias do='bash' # default bash
-alias go='st_open'
-alias vb='od'
-alias gh='go '$ST_YOURGITHUB
-alias gg='go https://www.google.com'
-function goWeb() {
-    go "https://www.$1"
-}
-alias goo='goWeb'
-
-
-
-alias st_version=$ST_RUN_SH'version.sh'
