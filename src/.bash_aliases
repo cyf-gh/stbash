@@ -18,6 +18,7 @@ alias rs='source ~/.bash_profile'
 alias grep='grep --color=auto'
 
 # git
+alias ga='git add -A'
 alias gs='git status'
 alias gc='git commit -m'
 alias gri=$ST_RUN_SH'utils/updateGitIgnore.sh'
@@ -70,3 +71,6 @@ alias spd='st_peek_dirs'
 alias st_peek_sys_instruction='alias | grep "alias sys_"'
 alias spsys='st_peek_sys_instruction'
 
+alias pl='swipl'
+alias rhs='runhaskell'
+alias hs='ghci'
