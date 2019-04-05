@@ -45,9 +45,14 @@ alias gh='go '$ST_YOURGITHUB
 function goWeb() {
     go "https://www.$1"
 }
+
+function github_search() {
+    goo "github.com/search?q=$1"
+}
 alias goo='goWeb'
 alias gg='goo google.com'
 alias bili='goo bilibili.com'
+alias ghs='github_search'
 
 # st
 alias st_peek_all_cli='cat ~/.bash_aliases'

@@ -13,6 +13,8 @@ fi
 
 uname | grep Linux > $ST_BLACKHOLE # Linux
 if [ $? = 0 ];then
+shopt -s expand_aliases
+source ~/.stbash/linux.sh
     ST_SYS_GEN="linux"
 fi
 
